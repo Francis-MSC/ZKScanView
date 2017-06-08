@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B6091D61EE8F0DD00764968 /* beep.caf in Resources */ = {isa = PBXBuildFile; fileRef = 4B6091D51EE8F0DD00764968 /* beep.caf */; };
 		4BF9E8E41EE7EB460039BBF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF9E8E31EE7EB460039BBF9 /* main.m */; };
 		4BF9E8E71EE7EB460039BBF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF9E8E61EE7EB460039BBF9 /* AppDelegate.m */; };
 		4BF9E8EA1EE7EB460039BBF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF9E8E91EE7EB460039BBF9 /* ViewController.m */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B6091D51EE8F0DD00764968 /* beep.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beep.caf; sourceTree = "<group>"; };
 		4BF9E8DF1EE7EB460039BBF9 /* ZKScanView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKScanView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF9E8E31EE7EB460039BBF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4BF9E8E51EE7EB460039BBF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				4BF9E90E1EE7F8D20039BBF9 /* scrollcorner_rightup@3x.png */,
 				4BF9E9141EE801FB0039BBF9 /* sm@2x.png */,
 				4BF9E9151EE801FB0039BBF9 /* sm@3x.png */,
+				4B6091D51EE8F0DD00764968 /* beep.caf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B6091D61EE8F0DD00764968 /* beep.caf in Resources */,
 				4BF9E9041EE7F8750039BBF9 /* scrollcorner_leftbottom@3x.png in Resources */,
 				4BF9E9081EE7F89C0039BBF9 /* scrollcorner_leftup@3x.png in Resources */,
 				4BF9E9171EE801FB0039BBF9 /* sm@3x.png in Resources */,

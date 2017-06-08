@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZKScanView"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "barcode, scan,QRCode"
 
   # This description is used to generate tags and improve search results.
@@ -107,7 +107,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-   s.resources = "ZKScanView/ScanView/**/*.{h,m}"
+   s.resources = "ZKScanView/ScanView/Resources/*.{png,caf}"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

@@ -17,6 +17,9 @@
 /** 是否在扫描 */
 @property(nonatomic,assign,readonly) BOOL running;
 
+/** 扫码成功时的声音 */
+@property(nonatomic,copy) NSString *audioName;
+
 /** 初始化方法 */
 - (instancetype)initWithFrame:(CGRect)frame;
 

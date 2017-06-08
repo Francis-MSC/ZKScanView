@@ -24,6 +24,7 @@
     /** 扫码视图 */
     __weak typeof(self) weakSelf = self;
     _scanView = [[ZKScanView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 240)];
+    _scanView.audioName = @"beep.caf";
     [_scanView setScrollSuccess:^(NSString *barcode) {
         [weakSelf operateCode:barcode];
     }];
