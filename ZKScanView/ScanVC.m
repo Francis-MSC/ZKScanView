@@ -22,9 +22,10 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     /** 扫码视图 */
+    __weak typeof(self) weakSelf = self;
     _scanView = [[ZKScanView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 240)];
     [_scanView setScrollSuccess:^(NSString *barcode) {
-        NSLog(@"%@",barcode);
+        [weakSelf operateCode:barcode];
     }];
     [self.view addSubview:_scanView];
     [_scanView setScanRect:CGRectMake(40, 40, [UIScreen mainScreen].bounds.size.width-80, 160)];
@@ -35,6 +36,7 @@
     [btn setTitle:@"暂停" forState:UIControlStateSelected];
     btn.titleLabel.font = [UIFont boldSystemFontOfSize:20];
     [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    btn.tag = 100;
     [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     
@@ -59,11 +61,20 @@
     }
 }
 
+/** 返回 */
 -(void)goBack{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+-(void)operateCode:(NSString *)code{
+    NSLog(@"%@",code);
+    /** 扫码成功后会暂停 */
+    UIButton *btn = [self.view viewWithTag:100];
+    btn.selected = NO;
+}
 
+
+/** 销毁时要移除，否则内存泄漏 */
 -(void)dealloc{
     [_scanView remove];
 }

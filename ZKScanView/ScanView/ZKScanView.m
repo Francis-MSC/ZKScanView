@@ -200,7 +200,7 @@
         NSLog(@"%@",metadataObject.stringValue);
         if(metadataObject.stringValue > 0){
             [self stop];
-            AudioServicesPlaySystemSound(1002);
+            AudioServicesPlaySystemSound(1007);
             if (_scrollSuccess) {
                 _scrollSuccess(metadataObject.stringValue);
             }
